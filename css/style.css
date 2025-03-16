@@ -1,0 +1,80 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00274C;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0074D9;
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+nav {
+    background-color: #0074D9;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Grid Layout */
+.caps-page main, 
+.foodpantry-page main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .caps-page main, .foodpantry-page main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #00274C;
+    padding: 20px;
+    color: white;
+}
