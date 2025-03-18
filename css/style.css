@@ -1,25 +1,25 @@
-/* Import Google Fonts */
+/* import google font */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
 
 
 
-/* Mobile-First Design */
+/* mobile first design */
 body {
     font-family: "Nunito Sans", sans-serif;
     background-color: #f8f9fa;
-    color: #00274C; /* UMich Blue */
+    color: #00274C; 
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
-/* Skip to Main Content */
+/* skip to main content */
 a[href="#main-content"] {
     position: absolute;
     top: -40px;
     left: 10px;
-    background: #FFCB05; /* UMich Maize */
-    color: #00274C; /* UMich Blue */
+    background: #FFCB05; 
+    color: #00274C; 
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -30,9 +30,9 @@ a[href="#main-content"]:focus {
     top: 10px;
 }
 
-/* Header */
+/* header */
 header {
-    background: #00274C; /* UMich Blue */
+    background: #00274C; 
     padding: 20px;
     text-align: center;
     color: white;
@@ -45,9 +45,9 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Navigation */
+/* main navigation */
 nav {
-    background-color: #FFCB05; /* UMich Maize */
+    background-color: #FFCB05;
     padding: 15px;
 }
 
@@ -64,7 +64,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00274C; /* UMich Blue */
+    color: #00274C;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
@@ -73,7 +73,6 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* Indicate Active Page */
 nav ul li a.active {
     background: #00274C;
     color: white;
@@ -85,7 +84,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Main Content */
+/* main content */
 main {
     max-width: 1100px;
     margin: 20px auto;
@@ -95,22 +94,22 @@ main {
     border-radius: 8px;
 }
 
-/* Headings */
+/* headings */
 h2, h3 {
     font-family: "Playfair Display", serif;
     font-weight: 700;
-    text-align: left; /* Ensures text is properly aligned */
+    text-align: left;
 }
 
 h2 {
     font-size: 2rem;
-    color: #00274C; /* UMich Blue */
+    color: #00274C; 
     margin-bottom: 15px;
 }
 
 h3 {
     font-size: 1.5rem;
-    color: #00274C; /* UMich Blue */
+    color: #00274C;
     margin-bottom: 10px;
 }
 
@@ -125,25 +124,24 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Grid Layout for CAPS & Food Pantry Pages */
+/* grid layout for caps and food pantry pages */
 .caps-page main,
 .foodpantry-page main {
     display: grid;
-    grid-template-columns: 1fr; /* Default to single column for mobile */
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
 @media (min-width: 768px) {
     .caps-page main,
     .foodpantry-page main {
-        grid-template-columns: repeat(2, minmax(250px, 1fr)); /* Two responsive columns */
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
         align-items: start;
         gap: 20px;
     }
 }
 
-/* Cards - Ensuring Dynamic Resizing */
-/* 🔥 Ensure Cards Don't Overlap 🔥 */
+/* cards */
 .card {
     background: #f8f9fa;
     padding: 20px;
@@ -156,32 +154,29 @@ a:hover {
     overflow: hidden; /* Prevents content from overlapping */
 }
 
-/* Ensure text within cards is readable and responsive */
 .card p {
     width: 100%;
     text-align: left;
     margin-bottom: 10px;
 }
 
-/* 🔥 Fixed Image Resizing 🔥 */
 .card img {
     width: 100%;
     max-width: 100%;
-    max-height: 400px; /* Prevents overly large images */
+    max-height: 400px;
     height: auto;
-    object-fit: cover; /* Ensures images fit inside without stretching */
+    object-fit: cover;
     display: block;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 
-/* Full-Width Sections */
 .full-width {
     grid-column: span 2;
 }
 
-/* Buttons */
+/* buttons */
 .button {
     display: inline-block;
     padding: 10px 15px;
@@ -199,7 +194,7 @@ a:hover {
     color: white;
 }
 
-/* Footer */
+/* footer */
 footer {
     background-color: #00274C;
     padding: 20px;
@@ -214,12 +209,4 @@ footer a {
 
 footer a:hover {
     color: white;
-}
-
-/* Accessibility - Disable Motion for Users Who Prefer Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation: none !important;
-        transition: none !important;
-    }
 }
