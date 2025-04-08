@@ -16,7 +16,7 @@
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "caps.html">Counseling and Psychiatric Services</a></li>
                 <li><a href = "firstgen.html">First Generation Students</a></li>
-                <li><a href = "foodpantry.html">Maize & Blue Cupboard</a></li>
+                <li><a href = "foodpantry.html" class="active">Maize & Blue Cupboard</a></li>
             </ul>
         </nav>
         <h1>Maize & Blue Cupboard </h1>
@@ -43,6 +43,10 @@
              </p>
              <img src="images/grocerybag.png" alt="Grocery bag of fresh produce">
         </div>
+        <div class="card">
+            <h2>Live Status</h2>
+            <p id="open-close"></p>
+        </div>        
         <div class="card">
             <h2>Hours and Location</h2>
             <h3>Hours</h3>
@@ -86,9 +90,17 @@
         </div>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>© <span id="year"></span> University of Michigan. All rights reserved.</p>
+        <div class="footer-info">
+            <p><strong>Maize & Blue Cupboard</strong></p>
+            <p>Phone: 734-936-2794</p>
+            <p>Location: Basement, Betsy Barbour Residence Hall (420 S State St, Ann Arbor, MI 48109)</p>
+            <p>Hours: Sunday 2–6 PM, Mon–Thurs 3–7 PM, Friday 12–7 PM, Sat closed</p>
+            <p><a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2025-01">Make an appointment</a></p>
+        </div>
     </footer>
-
+    <script src="js/footer.js"></script>
+    <script src="js/foodpantry-status.js"></script>
 </body>
 
 </html>

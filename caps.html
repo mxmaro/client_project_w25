@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "caps.html">Counseling and Psychiatric Services</a></li>
+                <li><a href = "caps.html" class="active">Counseling and Psychiatric Services</a></li>
                 <li><a href = "firstgen.html">First Generation Students</a></li>
                 <li><a href = "foodpantry.html">Maize & Blue Cupboard</a></li>
             </ul>
@@ -23,6 +23,10 @@
 
     </header>
     <main id="main-content">
+        <div class="card live-status-card">
+            <h3 class="live-status-heading">Live Status</h3>
+            <p id="open-close" class="live-status-text"></p>
+        </div>
         <div class="card">
             <h2>About Us</h2>
             <p>University Health & Counseling (UHC) supports the health and well-being of the campus community. We are inspired to help students realize their potential, cope with the stresses of life, work productively, and connect meaningfully with others.
@@ -55,9 +59,17 @@
         </div>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-    </footer>
-
+        <p>© <span id="year"></span> University of Michigan. All rights reserved.</p>
+        <div class="footer-info">
+            <p><strong>CAPS - Counseling and Psychological Services</strong></p>
+            <p>Phone: (734) 764-8312</p>
+            <p>Location: 4th Floor, Michigan Union</p>
+            <p>Hours: Mon–Thurs 8 AM – 6 PM, Friday 8 AM – 5 PM, Sat–Sun closed</p>
+            <p><a href="https://caps.umich.edu/">Visit CAPS website</a></p>
+        </div>
+    </footer>    
+    <script src="js/footer.js"></script>
+    <script src="js/caps-status.js"></script>
 </body>
 
 </html>

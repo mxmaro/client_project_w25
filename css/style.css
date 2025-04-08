@@ -16,7 +16,7 @@ body {
 /* skip to main content */
 a[href="#main-content"] {
     position: absolute;
-    top: -40px;
+    top: -50px;
     left: 10px;
     background: #FFCB05; 
     color: #00274C; 
@@ -77,6 +77,8 @@ nav ul li a.active {
     background: #00274C;
     color: white;
     text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -193,6 +195,14 @@ a:hover {
     background: #00274C;
     color: white;
 }
+
+?/* card widget style */
+.live-status-card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
 
 /* footer */
 footer {
